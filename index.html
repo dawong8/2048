@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.js"> </script>
+</head>
+<body>
+
+
+
+	<div id="startscreen" class="hide">
+		<h1 class="title">2048</h1>
+		<p> Game was originally created by Gabriele Cirulli. This is a recreation. </p>
+
+		<form id="submit-play"><input type="submit" name="play" value="PLAY"></form> 
+		<br>
+		<button id="instructions"> INSTRUCTIONS </button>
+		<div class="instructionsModal hide"> 
+			<button id="X"> CLOSE </button> 
+			<p> Use the Arrow Keys to move the Tiles. Tiles with the same value can be combined if they are next to each other. After each turn, a new tile will spawn randomly. Move the tiles to earn a score of 2048. <br> However, You can score more than 2048, the game ends only when you are out of moves or decide to quit.</p>
+		</div>
+
+	</div>
+
+
+	<div id="game" class="hide"> <form> <button id="quit"> QUIT</button> </form></div>
+	<div id="lose-screen" class="hide"> <h2> Out of moves. You lose. </h2></div>
+
+
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

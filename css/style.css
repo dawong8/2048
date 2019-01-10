@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+
+
+body {
+	background: #FAF8EE;
+	color: #8E7966;
+	font-family: 'Thasadith', sans-serif;
+
+}
+
+.hide {
+	display: none !important;
+}
+
+
+#startscreen {
+/*	display:flex;
+	justify-content: center;*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+.title {
+	font-size: 50px;
+}
+
+.instructionsModal{
+	position: fixed;
+	margin: 0 20%;
+	top: 100px;
+	height: 400px;
+	width: 60%;
+	background: #8E7966;
+	font-size: 30px;
+	color: #FAF8EE;
+	padding-top: 10px;
+}
+
+#X {
+	border: solid 5px #FAF8EE;
+	color: #FAF8EE;
+}
+
+.instructionsModal p{
+	padding: 0 10%;
+}
+
+
+.blur {
+	filter: blur(5px);
+}
+
+
+input[type="submit"], button {
+	background: none;
+	margin: 0 20px 0 10px;
+	width: 100px;
+	height: 50px;
+	font-size: 50px
+	color: #8E7966;
+	font-family: 'Thasadith', sans-serif;
+	border: solid 5px #8E7966 ;
+	border-radius: 45px;
+
+}
+
+input[type="submit"]:hover, button:hover {
+	opacity: 0.75;
+}
+
+
+#game {
+
+	/*align-items: center; this is useless ?*/
+}
+
+
+
+#lose-screen {
+	display: flex;
+	justify-content: center;
+
+	/*background: white;*/
+	/*opacity: 0.75; */
+
+
+	/*width: 100%; */
+	/*height: 1vh;*/
+	/*align-items: center;*/
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  	grid-gap: 15px;
+  	grid-auto-rows: minmax(125px, 125px);
+	/*position: fixed;*/
+	margin: 0 30%;
+	width: 40%;
+	background: #B9AB9F;
+	border-radius: 5px;
+	border: solid 15px #B9AB9F;
+/*	height: 500px;
+	width: 500px;*/
+}
+
+.cell {
+	background: #CBBEB3;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: center;
+	/*border: solid 10px #B9AB9F;*/
+
+	/*grid-column: 3;
+  	grid-row: 4;*/
+
+}
+
+[class^="value-"], div[class*=" value-"] {
+    background: #EFC948;
+    font-size: 65px;  /* Adjust font size */
+
+}
+
+
+.value-2 {
+	background: #EEE4DA !important;
+	font-size: 75px !important;
+
+
+}
+
+.value-4 {
+	background: #EDE0C7 !important;
+	font-size: 75px !important;
+
+}
+
+
+.value-8 {
+	background: #E9B381 !important;
+	font-size: 75px !important;
+
+}
+
+.value-16 {
+	background: #E9996C !important;
+	font-size: 75px !important;
+
+}
+
+.value-32 {
+	background: #E78266 !important;
+	font-size: 75px !important;
+
+}
+
+.value-64 {
+	background: #E95937 !important;
+	font-size: 75px !important;
+
+}
+
+.value-128 {
+	background: #F8CF75 !important;
+	/*font-size: 65px;  */
+}
+
+
+/* homepage animations */
+
+.rain, .rain8, .rain4, .rain128 {
+	position: fixed; 
+	top: -100px;
+	left: 20px;
+
+	width: 50px; 
+	height: 50px;
+	font-size: 45px !important;
+
+	border: solid 7px #B9AB9F;
+	opacity: 0.5;
+}
+
+
+
+
