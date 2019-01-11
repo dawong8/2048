@@ -363,7 +363,7 @@ class Game {
 							$(`#${r}${c}`).addClass(`value-${this.values[r][c]}`).removeClass(`value-${this.values[r][c]/2}`).text(`${this.values[r][c]}`); //.velocity({rotateZ:360},{duration:1000});
 							$(`#${r}${c+1}`).removeClass(`value-${this.values[r][c]/2}`).text("");
 
-							$(`#${r}${c}`).velocity( {opacity: 0.5}, {duration: 500}).velocity("reverse");
+							$(`#${r}${c}`).velocity( {opacity: 0.25}, {duration: 100}).velocity("reverse");
 
 							this.moveLeft(); // ???????
 											// move the tiles again after the merge, in case [  2 2 2 0 ] ---> (after merge) [ 4 2 0 0]
@@ -391,7 +391,7 @@ class Game {
 
 							$(`#${r}${c}`).addClass(`value-${this.values[r][c]}`).removeClass(`value-${this.values[r][c]/2}`).text(`${this.values[r][c]}`); //.velocity({rotateZ:360},{duration:1000});
 							$(`#${r+1}${c}`).removeClass(`value-${this.values[r][c]/2}`).text("");
-							$(`#${r}${c}`).velocity( {opacity: 0.5}, {duration: 500}).velocity("reverse");
+							$(`#${r}${c}`).velocity( {opacity: 0.25}, {duration: 100}).velocity("reverse");
 
 
 							this.moveUp();
@@ -415,7 +415,7 @@ class Game {
 
 							$(`#${r}${c}`).addClass(`value-${this.values[r][c]}`).removeClass(`value-${this.values[r][c]/2}`).text(`${this.values[r][c]}`); //.velocity({rotateZ:360},{duration:1000});
 							$(`#${r}${c-1}`).removeClass(`value-${this.values[r][c]/2}`).text("");
-							$(`#${r}${c}`).velocity( {opacity: 0.50}, {duration: 500}).velocity("reverse");
+							$(`#${r}${c}`).velocity( {opacity: 0.25}, {duration: 100}).velocity("reverse");
 
 							this.moveRight(); 
 							this.emptyCells++;
@@ -437,7 +437,7 @@ class Game {
 
 							$(`#${r}${c}`).addClass(`value-${this.values[r][c]}`).removeClass(`value-${this.values[r][c]/2}`).text(`${this.values[r][c]}`); //.velocity({rotateZ:360},{duration:1000}); //.velocity({scale:1},{duration:50});
 							$(`#${r-1}${c}`).removeClass(`value-${this.values[r][c]/2}`).text("");
-							$(`#${r}${c}`).velocity( {opacity: 0.50}, {duration: 500}).velocity("reverse");
+							$(`#${r}${c}`).velocity( {opacity: 0.25}, {duration: 100}).velocity("reverse");
 
 							this.moveDown(); 
 							this.emptyCells++; 
@@ -491,6 +491,7 @@ class Game {
 			//$game.velocity("fadeOut", { duration: 10000, loop:1 });
 
 			//$game.toggleClass("hide");
+
 			$("#lose-screen").toggleClass("hide");
 			
 
