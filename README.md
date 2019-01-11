@@ -6,6 +6,9 @@ This is a remake of the popular mobile game 2048. The objective of the game is t
 ## Getting Started 
 Once downloaded, open [this](./index.html) in a web browser.
 
+###### Preview
+The project is also deployed [here](https://dawong8.github.io/2048/)
+
 
 ## Instructions for Gameplay
 User will use the arrow keys to move the tiles on the board. If two tiles of the same value are moved and are next to each other then 
